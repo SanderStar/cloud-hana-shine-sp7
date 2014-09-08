@@ -97,22 +97,6 @@ sap.ui.jsview("epm_po_worklist.Table", {
 	    var oToolbar1 = new sap.ui.commons.Toolbar("tb1");
 		oToolbar1.setDesign(sap.ui.commons.ToolbarDesign.Standard);
 
-		var oButton1 = new sap.ui.commons.Button("btnNew",{
-			text : oBundle.getText("new"),
-			tooltip : oBundle.getText("create"),
-			press : function(oEvent){
-          	  oController.onTBPress(oEvent,oController); } 
-		});
-		oToolbar1.addItem(oButton1);
-	   
-		var oButton1 = new sap.ui.commons.Button("btnEdit",{
-			text : oBundle.getText("edit"),
-			tooltip : oBundle.getText("t_edit"),
-			press : function(oEvent){
-	          	  oController.onTBPress(oEvent,oController); } 
-		});
-		oToolbar1.addItem(oButton1);
-	
 		var oButton1 = new sap.ui.commons.Button("btnDelete",{
 			text : oBundle.getText("delete"),
 			tooltip : oBundle.getText("t_delete"),

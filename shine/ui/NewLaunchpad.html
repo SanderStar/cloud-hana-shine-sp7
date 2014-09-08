@@ -22,9 +22,6 @@
 			background-repeat: no-repeat;
 			background-position: center;		
 		}
-		.dgClass{
-			background-image: url('./thumbnails/dg.png');
-		}
 		.poClass{
 			background-image: url('./thumbnails/poworklist.png');
 		}
@@ -45,26 +42,27 @@
 				data-sap-ui-libs="sap.m,sap.me"
 				data-sap-ui-theme="sap_bluecrystal">
 		</script>
+		
+		<script>
+		    
+		    $.ajax({
+                url: '../admin/DataGen.xsjs?cmd=synonym',
+                type: 'GET',
+                async: true,
+                success: function(data) {
+
+                },
+                error: function() {
+
+                }
+            });
+		    
+		</script>
 
 		<script>
 				
 				var app = new sap.m.App({initialPage:"home"});
 				
-				var adminTile = new sap.m.StandardTile({
-					icon : "sap-icon://database",
-					// number : "89",
-					//title : 'Data Generator',
-					//type : "Monitor",
-					removable : false,
-					press : function(oEvent) {
-						window.location = '../admin/admin.html';
-					},
-				    info : "Data Generator",
-				    infoState : "None"
-				});
-				adminTile.addStyleClass('templateTileClass');
-				adminTile.addStyleClass('dgClass');
-		
 				var poTile = new sap.m.StandardTile({
 					icon : "sap-icon://my-sales-order",
 					// type : "Monitor",
@@ -128,7 +126,7 @@
 				userTile.addStyleClass('templateTileClass');
 				userTile.addStyleClass('ucClass');
 
-		var items = [ adminTile, poTile, soTile, sowTile,
+		var items = [ poTile, soTile, sowTile,
 			          userTile,  ];
 		
 

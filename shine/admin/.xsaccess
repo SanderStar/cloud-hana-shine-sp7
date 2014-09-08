@@ -1,7 +1,0 @@
-{
-	"exposed": true,
-	"default_file": "admin.html",
-	"authentication": [{ "method": "LogonTicket" },{ "method" : "Form" }],
-	"authorization": [ "{{PACKAGE_NAME}}::Admin" ],
-	"cache_control" : "must-revalidate"   
-}
