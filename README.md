@@ -1,11 +1,13 @@
 #cloud-hana-shine
 
- #cloud-hana-sample=shine
+ #cloud-hana-sample=shinesp7
 
 ## Importing the "SHINE" source code to a Trial SAP HANA Instance with Eclipse
 *Authors: Dobromir Zahariev, Stephan Weber, Sangeetha Jayakumar*
 
 SAP HANA Interactive Education, or SHINE, is a demo application that makes it easy to learn how to build native SAP HANA applications. The demo application, comes complete with sample data and design-time developer objects for the application's database tables, data views, stored procedures, OData, and user interface.
+
+This repository contains SHINE SP7 that can be used with HANA SP7 or later.
 
 ### Requirements
 
