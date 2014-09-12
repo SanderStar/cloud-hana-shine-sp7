@@ -2,5 +2,5 @@
 	"exposed": true,
 	"authentication": [{ "method": "LogonTicket" },{ "method" : "Form" }], 
 	"authorization": [ "{{PACKAGE_NAME}}::Basic" ],
-	"default_file": "ui/NewLaunchpad.html"
+	"default_file": "index.html"
 }
